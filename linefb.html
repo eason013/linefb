@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      window.onload = function (){
+        var u = navigator.userAgent,
+        ua = navigator.userAgent.toLowerCase(),
+        isLineApp = u.indexOf("Line") > -1, // Line 內建瀏覽器
+        isFbApp = u.indexOf("FBAV") > -1, // FB App 內建瀏覽器
+        isWeixinApp = ua.match(/MicroMessenger/i) == "micromessenger"; // 微信內建瀏覽器
+        
+        // 如果是 Line 內建瀏覽器
+        if (isLineApp) {
+        // do sth
+        }
+        
+        // 如果是 FB App 內建瀏覽器
+        if (isFbApp) {
+        // do sth
+        }
+        
+        // 如果是 微信內建瀏覽器
+        if (isWeixinApp) {
+        // do sth
+        };
+      }    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
